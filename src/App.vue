@@ -81,12 +81,12 @@
            
 
           
-          <v-btn
-          class="pa-5 ml-15"
+           <v-btn
+          class="pa-5 ml-10 font-weight-bold"
           depressed
-          color="cyan"
+          color="blue lighten-4"
            @click="tweet()">
-           結果をツイート
+           ツイートする
            </v-btn>
            </v-col>
 
@@ -131,6 +131,9 @@ export default {
       this.random3 = Math.floor(Math.random() * this.msg3.length);
     },
     tweet() {
+      var shareURL = "https://twitter.com/intent/tweet?text=" + this.msg1[this.random1]+" "+this.msg2[this.random2]+" "+this.msg3[this.random3] + "%20%23エロ俳句";
+      location.href = shareURL
+        // console.log(this.msg1[this.random1]+" "+this.msg2[this.random2]+" "+this.msg3[this.random3]);
       
     }
   }
