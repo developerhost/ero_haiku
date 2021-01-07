@@ -99,7 +99,6 @@
 
 <script>
 
-
 export default {
   name: 'App',
 
@@ -131,7 +130,7 @@ export default {
       this.random3 = Math.floor(Math.random() * this.msg3.length);
     },
     tweet() {
-      var shareURL = "https://twitter.com/intent/tweet?text=" + this.msg1[this.random1]+" "+this.msg2[this.random2]+" "+this.msg3[this.random3] + "%20%23エロ俳句";
+      var shareURL = "https://twitter.com/intent/tweet?text=" + this.msg1[this.random1]+" "+this.msg2[this.random2]+" "+this.msg3[this.random3] + "%20%23エロ俳句"+'&url='+"https://ero-haiku-794a8.web.app/";
       location.href = shareURL
         // console.log(this.msg1[this.random1]+" "+this.msg2[this.random2]+" "+this.msg3[this.random3]);
       
